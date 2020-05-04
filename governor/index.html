@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可畏佐治亚调速器 | 碧蓝航线</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="divA">
+        <table>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>舰娘装填</td>
+                    <td>科技装填</td>
+                    <td>指挥猫装填</td>
+                    <td>装填buff</td>
+                    <td>总装填加成</td>
+                </tr>
+                <tr>
+                    <td>佐治亚</td>
+                    <td><input id="a0" type="number" min="0" step="1" value="173"></td>
+                    <td><input id="a1" type="number" min="0" step="1" value="4"></td>
+                    <td><input id="a2" type="number" min="0" step="1" value="0"></td>
+                    <td><input id="a3" type="number" min="0" step="0.1" value="0">%</td>
+                    <td><span id="resA">84.97%</span></td>
+                </tr>
+                <tr>
+                    <td>可畏</td>
+                    <td><input id="b0" type="number" min="0" step="1" value="124"></td>
+                    <td><input id="b1" type="number" min="0" step="1" value="51"></td>
+                    <td><input id="b2" type="number" min="0" step="1" value="0"></td>
+                    <td><input id="b3" type="number" min="0" step="0.1" value="8">%</td>
+                    <td><span id="resB">83.19%</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            佐治亚所携带主炮CD：<input id="cdA" type="number" min="0" step="0.01" value="19.42">s
+            <br>
+            参考：
+            <br>
+            佐治亚实际射速：<span id="rateA">16.50s</span>
+        </div>
+        <table>
+            <tbody>
+                <tr id="roundPos">
+                    <td>调速上限</td>
+                </tr>
+                <tr id="ratePos">
+                    <td>时间</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table id="tableB">
+        <tbody id="tbodyPos">
+        </tbody>
+    </table>
+    <div id="button">
+        <button id="calc" type="button" onclick="calc()">计算</button>
+        <button id="chose" type="button" onclick="chose()">筛选</button>
+        <button id="reset" type="button" onclick="reset()">重置</button>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
